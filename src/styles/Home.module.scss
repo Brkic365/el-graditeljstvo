@@ -1,0 +1,317 @@
+.main {
+  padding: 0;
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/images/3.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 8rem 1rem;
+    color: white;
+    text-align: center;
+
+    h1 {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+    }
+
+    button {
+      cursor: pointer;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: white;
+      color: black;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 0.25rem;
+    }
+  }
+
+  .about {
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .text {
+      text-align: center;
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+      }
+    }
+
+    .image {
+      margin-top: 2rem;
+      position: relative;
+      width: 90vw;
+      height: calc(90vw * 1.324);
+
+      max-width: 20rem;
+      max-height: calc(20rem * 1.324);
+
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+  }
+
+  .services {
+    margin-top: 5rem;
+    background-color: #222;
+    padding: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    .title {
+      color: white;
+      text-align: center;
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+      }
+    }
+
+    .grid {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      .service {
+        width: 10rem;
+        height: 10rem;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+          url("/images/interior.jpg");
+        background-size: cover !important;
+        background-position: 50% 50%;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        position: relative;
+
+        p {
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 600;
+          position: absolute;
+          bottom: 0.5rem;
+          text-align: center;
+        }
+      }
+
+      .service:nth-child(2) {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+          url("/images/exterior.jpg");
+      }
+
+      .service:nth-child(3) {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+          url("/images/ceramic.jpg");
+      }
+
+      .service:nth-child(4) {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+          url("/images/construction.jpg");
+      }
+    }
+  }
+
+  .gallery {
+    padding: 1rem;
+    padding-top: 4rem;
+
+    h2 {
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .grid {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      .image {
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .contact {
+    background: #222;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    padding-top: 4rem;
+    color: white;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    .copyright {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .main {
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    .hero {
+      padding: 12rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        width: 70%;
+        font-size: 2rem;
+      }
+
+      p {
+        margin-top: 1rem;
+        font-weight: 500;
+        width: 50%;
+        font-size: 1.1rem;
+      }
+
+      button {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+      }
+    }
+
+    .about {
+      flex-direction: row;
+      place-content: space-between;
+      padding: 4rem 2rem;
+
+      max-width: 55rem;
+      margin: 0 auto;
+
+      .text {
+        text-align: left;
+        width: 50%;
+        h2 {
+          margin-bottom: 3rem;
+        }
+
+        p {
+        }
+      }
+
+      .image {
+        margin-top: 0;
+      }
+    }
+
+    .services {
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      margin-top: 3rem;
+      .title {
+        max-width: 63rem;
+        margin: 0 auto;
+        text-align: left;
+        h2 {
+        }
+
+        p {
+        }
+      }
+
+      .grid {
+        .service {
+          width: 15rem;
+          height: 15rem;
+          p {
+            bottom: 1rem;
+            width: 95%;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .gallery {
+      margin: 0 auto;
+      margin-top: 5rem;
+      width: 45rem;
+      h2 {
+        text-align: left;
+      }
+
+      .grid {
+        gap: 1.5rem;
+        .image {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .main {
+    h2 {
+      font-size: 2rem;
+    }
+
+    .hero {
+      padding: 15rem 1rem;
+      h1 {
+        width: 45%;
+        font-size: 3rem;
+      }
+
+      p {
+        margin-top: 1rem;
+        font-weight: 500;
+        width: 50%;
+        font-size: 1.1rem;
+      }
+
+      button {
+        padding: 1.25rem 2.25rem;
+      }
+    }
+
+    .about {
+      max-width: 65rem;
+    }
+
+    .gallery {
+      width: 65rem;
+    }
+  }
+}
